@@ -1,0 +1,17 @@
+#! /bin/sh
+
+cidfile=./txgh.cid
+
+if [ ! -f $cidfile ]; then
+  echo "Container is not running"
+  exit 0
+fi
+
+cid=$(cat $cidfile)
+result=$(docker ps --filter "id=$cid" -q)
+
+if [ $result == '' ]; then
+  echo "Container is not running"
+else
+  echo "Container is running"
+fi

@@ -1,0 +1,6 @@
+#! /bin/sh
+
+docker run \
+  -p 9292:9292 \
+  -e "TXGH_CONFIG=raw://$(cat ./config.yml)" \
+  quay.io/lumoslabs/txgh:latest

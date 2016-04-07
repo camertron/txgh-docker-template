@@ -1,0 +1,13 @@
+#! /bin/bash
+
+cidfile=./txgh.cid
+
+if [ ! -f $cidfile ]; then
+  echo "Container is not running"
+  exit 0
+fi
+
+cid=$(cat $cidfile)
+
+docker kill $cid
+rm $cidfile

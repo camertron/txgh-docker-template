@@ -1,0 +1,3 @@
+#! /bin/sh
+
+docker pull quay.io/lumoslabs/txgh:latest
