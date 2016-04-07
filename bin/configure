@@ -1,0 +1,11 @@
+#! /bin/bash
+
+ruby -e "puts 'hello'" > /dev/null 2>&1
+
+if [[ $? > 0 ]]; then
+  echo "Ruby doesn't appear to be installed."
+  echo "Please install it before continuing."
+  exit $?
+fi
+
+ruby -r'./lib/configurator' -e "Configurator.add_project('./config.yml')"
