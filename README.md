@@ -13,7 +13,7 @@ Getting Started
 
 1. Clone this repository.
 
-2. Change directory into your local clone and configure Txgh by running `./bin/configure`. Follow the script's instructions. See the [Txgh README](https://github.com/lumoslabs/txgh#configuring-txgh) for a description of all the configration options.
+2. Change directory into your local clone and configure Txgh by running `./bin/configure`. Follow the script's instructions. See the [Txgh README](https://github.com/lumoslabs/txgh#configuring-txgh) for a description of all the configuration options.
 
 3. Run `./bin/update` to pull the latest Txgh Docker image.
 
