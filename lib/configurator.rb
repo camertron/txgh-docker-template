@@ -62,7 +62,6 @@ class Configurator
 
     @config_file = config_file
     @options = options
-    puts options.inspect
   end
 
   def create
